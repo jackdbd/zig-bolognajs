@@ -1,0 +1,20 @@
+{
+  "name": "zig-bolognajs",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "nuke": "rm -rf node_modules package-lock.json",
+    "serve": "python3 -m http.server 8080 --directory ./dist",
+    "view:pdf": "atril assets/zig-bolognajs.pdf"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.43.6",
+    "@slidev/theme-bricks": "latest",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.38.1"
+  }
+}

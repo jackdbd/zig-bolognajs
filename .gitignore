@@ -1,0 +1,8 @@
+# environment variables
+.envrc
+
+# dependencies
+node_modules/
+
+# build directory that will be deployed
+dist/
