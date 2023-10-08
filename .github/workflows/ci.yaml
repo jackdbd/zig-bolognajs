@@ -17,9 +17,17 @@ jobs:
       matrix:
         # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources
         host: [ubuntu-22.04]
+        zig-version: [master, 0.11.0]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - run: npm ci --omit=dev
+      - name: Setup Zig
+        # https://github.com/marketplace/actions/setup-zig
+        uses: goto-bus-stop/setup-zig@v2
+        with:
+          version: ${{ matrix.zig-version }}
+      - name: Debug zig version
+        run: which zig && zig version
       - run: npm run build
       - run: npm run test

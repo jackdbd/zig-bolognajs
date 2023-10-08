@@ -4,9 +4,8 @@
   "scripts": {
     "build": "run-s build:*",
     "build:slides": "slidev build",
-    "build:zig": "zig build -Doptimize=ReleaseSmall",
-    "postbuild:zig": "mv zig-out/lib/* public/",
-    "clean": "rimraf public/* *.o",
+    "build:zig": "zig build -Doptimize=ReleaseSmall && mv zig-out/lib/* public/",
+    "clean": "rimraf public/*.wasm dist/ zig-cache/ zig-out/",
     "dev": "run-p dev:*",
     "dev:slides": "slidev --open",
     "dev:zig": "ls zig/*.zig | entr -r zig build -Doptimize=Debug",
@@ -33,7 +32,6 @@
     "simple-git-hooks": "^2.9.0"
   },
   "simple-git-hooks": {
-    "pre-commit": "npm run build:zig",
     "pre-push": "npm run build:zig"
   }
 }

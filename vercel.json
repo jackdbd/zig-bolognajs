@@ -1,7 +1,8 @@
 {
+  "buildCommand": "npm run build:slides",
+  "installCommand": "npm install --omit=dev",
+  "outputDirectory": "dist",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "buildCommand": "npm run build:slides",
-  "outputDirectory": "dist"
+  ]
 }

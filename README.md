@@ -33,13 +33,13 @@ You can view the presentation either in:
 
 ## Deploy
 
-The `dist` directory will be automatically deployed to Vercel on each `git push`.
+The presentation will be automatically deployed to Vercel on each `git push`.
 
 ## PDF export
 
 Slidev allows [exporting the slides to a PDF](https://sli.dev/guide/exporting.html#pdf). This feature relies on [Playwright](https://playwright.dev/) and requires [playwright-chromium](https://www.npmjs.com/package/playwright-chromium) to be available. Since I did not want to install Playwright when building on Vercel (so deployments are faster), I declared `playwright-chromium` as a dev dependency and set `npm install --omit=dev` as the Vercel `installCommand` in `vercel.json`.
 
-> :warning: Since the zig compiler is not available on Vercel, and since I don't want to download it on each deployment, ensure to build the WebAssembly modules locally before pushing to
+> :information_source: Since the zig compiler is not available on Vercel, and since I don't want to download it on each deployment, I rely on a pre-push git hook to build all WebAssembly modules locally. All files that end up in `public/` will be hosted as static files on Vercel. I'm not sure whether it is possible to push the `.wasm` modules to Vercel without tracking them in git. I tried to ignore them in the `.gitignore` and unignore them in the `.vercelignore`, but that didn't work.
 
 Run this command to export the presentation to `assets/zig-bolognajs.pdf`.
 
