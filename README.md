@@ -10,7 +10,7 @@ I gave this talk at [Bologna JS](https://www.bolognajs.com/).
 
 ## Installation
 
-This presentation is a Vue.js application built with [Slidev](https://sli.dev/). You can install its dependencies with:
+This presentation is a Vue.js application built with [Slidev](https://sli.dev/). You can install its dependencies with the following command:
 
 ```sh
 npm install
@@ -18,7 +18,9 @@ npm install
 
 ## Development
 
-Slidev can hot-code reload this presentation thanks to Vite. Launch the Vite dev server with:
+Slidev can hot-code reload this presentation thanks to Vite. Zig [cannot yet do it](https://github.com/ziglang/zig/issues/68), but as a workaround we list all zig source files and use [entr](https://github.com/eradman/entr) to watch them for changes.
+
+Launch the Vite dev server and re-compile all WebAssembly modules with this command:
 
 ```sh
 npm run dev
@@ -36,6 +38,8 @@ The `dist` directory will be automatically deployed to Vercel on each `git push`
 ## PDF export
 
 Slidev allows [exporting the slides to a PDF](https://sli.dev/guide/exporting.html#pdf). This feature relies on [Playwright](https://playwright.dev/) and requires [playwright-chromium](https://www.npmjs.com/package/playwright-chromium) to be available. Since I did not want to install Playwright when building on Vercel (so deployments are faster), I declared `playwright-chromium` as a dev dependency and set `npm install --omit=dev` as the Vercel `installCommand` in `vercel.json`.
+
+> :warning: Since the zig compiler is not available on Vercel, and since I don't want to download it on each deployment, ensure to build the WebAssembly modules locally before pushing to
 
 Run this command to export the presentation to `assets/zig-bolognajs.pdf`.
 

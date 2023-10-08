@@ -1,0 +1,28 @@
+/* 
+ * Colors
+ * https://encycolorpedia.com/
+ * https://www.colorxs.com/color/
+ * https://www.htmlcsscolor.com/hex/
+ * https://colorbrewer2.org/#type=sequential&scheme=Greys&n=3
+*/
+:root {
+    --color-gray-dark: #636363;
+    --color-gray-medium: #bdbdbd;
+    --color-gray-light: #f0f0f0;
+    --color-alabaster: #f2f0e6;
+    --color-bone: #e3dac9;
+    --color-venetian-red: #c80815;
+    --color-white: #ffffff;
+  
+    /* --color-accent: forestgreen; */
+    --color-accent: var(--color-venetian-red);
+    --color-fosdem: #ab1b93;
+    --color-github: #130f30;
+    --color-reddit: #ff5700;
+    /* --color-rust: #b7410e; */
+    --color-rust: #000;
+    --color-twitter: #1da1f2;
+    --color-youtube: #ff0000;
+    --color-zig: #f7a41d;
+  }
+  

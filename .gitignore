@@ -6,3 +6,12 @@ node_modules/
 
 # build directory that will be deployed
 dist/
+
+public/*
+!public/avatar.jpg
+
+# cache directory used by the zig compiler
+zig-cache/
+
+# build directory for artifacts compiled by zig
+zig-out/

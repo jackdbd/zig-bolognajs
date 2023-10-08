@@ -2,19 +2,38 @@
   "name": "zig-bolognajs",
   "private": true,
   "scripts": {
-    "build": "slidev build",
-    "dev": "slidev --open",
+    "build": "run-s build:*",
+    "build:slides": "slidev build",
+    "build:zig": "zig build -Doptimize=ReleaseSmall",
+    "postbuild:zig": "mv zig-out/lib/* public/",
+    "clean": "rimraf public/* *.o",
+    "dev": "run-p dev:*",
+    "dev:slides": "slidev --open",
+    "dev:zig": "ls zig/*.zig | entr -r zig build -Doptimize=Debug",
+    "postdev:zig": "mv zig-out/lib/* public/",
     "nuke": "rm -rf node_modules package-lock.json",
-    "serve": "python3 -m http.server 8080 --directory ./dist",
+    "serve": "http-server ./dist --port 8080",
+    "test": "zig build test-checkerboard && zig build test-fmt",
+    "update-git-hooks": "npx simple-git-hooks",
     "view:pdf": "atril assets/zig-bolognajs.pdf"
   },
   "dependencies": {
-    "@slidev/cli": "^0.43.6",
+    "@slidev/cli": "^0.43.7",
     "@slidev/theme-bricks": "latest",
     "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest"
+    "@slidev/theme-seriph": "latest",
+    "npm-run-all": "^4.1.5"
   },
   "devDependencies": {
-    "playwright-chromium": "^1.38.1"
+    "@iconify-json/ri": "^1.1.12",
+    "@iconify-json/uim": "^1.1.6",
+    "http-server": "^14.1.1",
+    "rimraf": "^5.0.5",
+    "playwright-chromium": "^1.38.1",
+    "simple-git-hooks": "^2.9.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run build:zig",
+    "pre-push": "npm run build:zig"
   }
 }
