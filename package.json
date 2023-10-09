@@ -2,14 +2,13 @@
   "name": "zig-bolognajs",
   "private": true,
   "scripts": {
-    "build": "run-s build:*",
+    "build": "npm run build:zig && npm run build:slides",
     "build:slides": "slidev build",
-    "build:zig": "zig build -Doptimize=ReleaseSmall && mv zig-out/lib/* public/",
+    "build:zig": "zig build -Doptimize=ReleaseSmall && zig build --build-file build-canvas.zig -Doptimize=ReleaseSmall && mv zig-out/lib/main.wasm zig-out/lib/canvas.wasm && mv zig-out/lib/* public/",
     "clean": "rimraf public/*.wasm dist/ zig-cache/ zig-out/",
     "dev": "run-p dev:*",
     "dev:slides": "slidev --open",
-    "dev:zig": "ls zig/*.zig | entr -r zig build -Doptimize=Debug",
-    "postdev:zig": "mv zig-out/lib/* public/",
+    "dev:zig": "find ./zig -type f -printf '%p\n' | entr sh -c 'zig build -Doptimize=Debug && zig build --build-file build-canvas.zig -Doptimize=Debug && mv zig-out/lib/main.wasm zig-out/lib/canvas.wasm && mv zig-out/lib/* public/'",
     "nuke": "rm -rf node_modules package-lock.json",
     "serve": "http-server ./dist --port 8080",
     "test": "zig build test-checkerboard && zig build test-fmt",
@@ -21,7 +20,10 @@
     "@slidev/theme-bricks": "latest",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "@thi.ng/wasm-api": "^1.4.23",
+    "@thi.ng/wasm-api-canvas": "^0.1.32",
+    "@thi.ng/wasm-api-dom": "^0.11.40"
   },
   "devDependencies": {
     "@iconify-json/ri": "^1.1.12",

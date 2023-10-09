@@ -48,14 +48,14 @@ onMounted(async() => {
     importObject
   )
 
-  const imports = WebAssembly.Module.imports(module)
+  // const imports = WebAssembly.Module.imports(module)
 
-  console.log(
-    `the compiled WebAssembly module has these imports available`,
-    imports
-  )
+  // console.log(
+  //   `the compiled WebAssembly module has these imports available`,
+  //   imports
+  // )
 
-  console.log(`created WebAssembly instance`, instance)
+  // console.log(`created WebAssembly instance`, instance)
 
   // now that the WebAssembly instance is ready, we use a factory function to
   // create the JS function `formatZigCode`

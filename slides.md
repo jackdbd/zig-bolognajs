@@ -46,5 +46,21 @@ src: ./slides/checkerboard.md
 ---
 
 ---
+src: ./slides/checkerboard-implementation.md
+---
+
+---
+src: ./slides/checkerboard-wasm.md
+---
+
+---
+src: ./slides/wasm-api.md
+---
+
+---
+src: ./slides/wasm-api-implementation.md
+---
+
+---
 src: ./slides/how-to-learn-zig.md
 ---

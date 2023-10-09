@@ -80,4 +80,13 @@
   .width\:80\% {
     width: 80%;
   }
-  
+
+.wasm-api-canvas {
+  /* assuming a canvas size of 640x480 px */
+  border-radius: 0.25em;
+  left: calc(50% - 320px);
+  outline: 0.15rem solid var(--color-accent);
+  position: fixed;
+  top: calc(60% - 240px);
+  z-index: 1;
+}

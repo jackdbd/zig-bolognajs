@@ -38,11 +38,6 @@ onMounted(async() => {
 
   const importObject = {
     env: {
-      print: (buffer_length: number) => {
-        console.log(
-          `fixed buffer length (defined in zig code): ${buffer_length}`
-        )
-      },
       memory
     }
   }
@@ -96,15 +91,14 @@ onMounted(async() => {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     ctx.putImageData(imageData, 0, 0)
-    }
+  }
 
+  drawCheckerboard()
+
+  setInterval(() => {
     drawCheckerboard()
-
-    setInterval(() => {
-        drawCheckerboard()
-    }, intervalMs.value)
+  }, intervalMs.value)
 })
-
 </script>
 
 <style scoped>
@@ -117,17 +111,7 @@ canvas {
 </style>
 
 <template>
-  <div class="flex flex-row gap-2xl">
+  <div>
     <canvas id="checkerboard"></canvas>
-    <div>
-      <p><strong>Debug it!</strong></p>
-      <ol>
-        <li>Open Chrome DevTools.</li>
-        <li>Go to the <code class="inline-code">Sources</code> tab.</li>
-        <li>Open the <code class="inline-code">checkerboard.wasm</code> file.</li>
-        <li>Place a breakpoint in the <code class="inline-code">$colorCheckerboard</code> function, right after the local variables.</li>
-        <li>Press F8 a few times to resume script execution when it pauses on the breakpoint.</li>
-      </ol>
-    </div>
   </div>
 </template>

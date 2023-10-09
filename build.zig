@@ -1,4 +1,5 @@
 const std = @import("std");
+const wasm_api = @import("node_modules/@thi.ng/wasm-api/zig/build.zig");
 const Builder = std.build.Builder;
 const FileSource = std.build.FileSource;
 const Mode = std.builtin.Mode;
@@ -13,6 +14,8 @@ pub fn build(b: *Builder) void {
 
     inline for (MODULES) |name| {
         const root_source_file = .{ .path = "zig" ++ std.fs.path.sep_str ++ name ++ ".zig" };
+        std.log.debug("building {s}.wasm", .{name});
+
         // https://ziglang.org/documentation/master/#Freestanding
         // See also this example:
         // https://github.com/thi-ng/umbrella/blob/main/packages/leb128/tools/build-binary.sh
@@ -34,11 +37,9 @@ pub fn build(b: *Builder) void {
             // Number of WebAssembly memory pages reserved on the heap memory.
             // This must match the number of pages used in Checkerboard.vue.
             const number_of_pages = 2;
-            std.log.debug("building checkerboard.wasm (allow {d} pages of WASM memory, 64KiB each)", .{number_of_pages});
+            std.log.debug("Allow {d} pages of WASM memory (64KiB each) for {s}.wasm", .{ number_of_pages, name });
             lib.initial_memory = std.wasm.page_size * number_of_pages;
             lib.max_memory = std.wasm.page_size * number_of_pages;
-        } else {
-            std.log.debug("building {s}.wasm", .{name});
         }
         // Add all symbols to the dynamic symbol table
         lib.rdynamic = true;
