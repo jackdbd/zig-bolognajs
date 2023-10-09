@@ -1,92 +1,99 @@
 .inline-code {
-    /* border-radius: 0.25em; */
-    font-size: 1em;
-    font-family: 'Fira Code';
-    /* outline: 1px solid var(--color-gray-dark); */
-    padding: 0 0.25em;
-  }
+  /* border-radius: 0.25em; */
+  font-size: 1em;
+  font-family: 'Fira Code';
+  /* outline: 1px solid var(--color-gray-dark); */
+  padding: 0 0.25em;
+}
   
-  .inline-code::after,.inline-code::before {
-    content: '';
-  }
+.inline-code::after,.inline-code::before {
+  content: '';
+}
   
-  .btn {
-    background-color: var(--prism-background);
-    border-radius: 0.25em;
-    color: var(--color-accent);
-    font-weight: 700;
-    outline: 1px solid var(--color-accent);
-    padding: 0.15em 0.25em;
-  }
-  .btn:hover {
-    background-color: var(--color-accent);
-    color: var(--color-white);
-  }
+.btn {
+  background-color: var(--prism-background);
+  border-radius: 0.25em;
+  color: var(--color-accent);
+  font-weight: 700;
+  outline: 1px solid var(--color-accent);
+  padding: 0.15em 0.25em;
+}
+
+.btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
   
-  .fosdem {
-    --primary-color: var(--color-fosdem);
-  }
+.fosdem {
+  --primary-color: var(--color-fosdem);
+}
   
-  .github {
-    --primary-color: var(--color-github);
-  }
+.github {
+  --primary-color: var(--color-github);
+}
+
+.js {
+  --primary-color: var(--color-js);
+}
   
-  .reddit {
-    --primary-color: var(--color-reddit);
-  }
+.reddit {
+  --primary-color: var(--color-reddit);
+}
   
-  .rust {
-    --primary-color: var(--color-rust);
-  }
+.rust {
+  --primary-color: var(--color-rust);
+}
   
-  .twitter {
-    --primary-color: var(--color-twitter);
-  }
+.twitter {
+  --primary-color: var(--color-twitter);
+}
   
-  .youtube {
-    --primary-color: var(--color-youtube);
-  }
+.youtube {
+  --primary-color: var(--color-youtube);
+}
   
-  .zig {
-    --primary-color: var(--color-zig);
-  }
+.zig {
+  --primary-color: var(--color-zig);
+}
   
-  .color\:accent {
-    color: var(--color-accent);
-    /* color: var(--color-zig); */
-  }
+.color\:accent {
+  color: var(--color-accent);
+  /* color: var(--color-zig); */
+}
+
+.color\:js {
+  color: var(--color-js);
+}
   
-  .color\:primary {
-    color: var(--primary-color);
-  }
+.color\:primary {
+  color: var(--primary-color);
+}
   
-  .color\:zig {
-    color: var(--color-zig);
-  }
+.color\:zig {
+  color: var(--color-zig);
+}
   
-  .font\:fira-code {
-    font-family: 'Fira Code';
-    /* font-family: 'Fira Code'; */
-    /* font-family: 'Roboto'; */
-    /* font-family: 'Lato'; */
-    /* font-family: 'Lobster'; */
-    /* font-family: 'Nunito Sans'; */
-  }
+.font\:fira-code {
+  font-family: 'Fira Code';
+  /* font-family: 'Fira Code'; */
+  /* font-family: 'Roboto'; */
+  /* font-family: 'Lato'; */
+  /* font-family: 'Lobster'; */
+  /* font-family: 'Nunito Sans'; */
+}
   
-  .left\:10\% {
-    left: 10%;
-  }
+.left\:10\% {
+  left: 10%;
+}
   
-  .width\:80\% {
-    width: 80%;
-  }
+.width\:80\% {
+  width: 80%;
+}
 
 .wasm-api-canvas {
-  /* assuming a canvas size of 640x480 px */
+  --offset-top-percent: -30%;
+
   border-radius: 0.25em;
-  left: calc(50% - 320px);
   outline: 0.15rem solid var(--color-accent);
-  position: fixed;
-  top: calc(60% - 240px);
   z-index: 1;
 }

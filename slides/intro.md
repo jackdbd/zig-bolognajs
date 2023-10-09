@@ -2,8 +2,10 @@
 layout: cover
 ---
 <h1>
-Let's use <ZigLogo /> in <span class="color:zig">JS</span>
+Let's use <ZigLogo /> in <JavaScriptLogo />
 </h1>
+
+Quick links:
 
 - <Anchor href="https://zig-bolognajs.vercel.app/" text="https://zig-bolognajs.vercel.app/" />
 - <Anchor href="https://github.com/jackdbd/zig-bolognajs" text="https://github.com/jackdbd/zig-bolognajs" />

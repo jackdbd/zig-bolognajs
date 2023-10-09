@@ -22,7 +22,7 @@ const onClick = (() => {
     bridge.exports.start();
     const el = document.querySelector('body > canvas')
     if (el) {
-      el.classList.add("wasm-api-canvas")
+      el.classList.add("imposter", "wasm-api-canvas")
     }
   }
 })
