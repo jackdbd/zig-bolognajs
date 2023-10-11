@@ -5,6 +5,7 @@ An introduction to the Zig programming language and toolchain.
 I gave this talk at [Bologna JS](https://www.bolognajs.com/).
 
 - 🌐 https://zig-bolognajs.vercel.app/
+- Meetup event: https://www.meetup.com/it-IT/bologna-js-meetup/events/296655951/
 - 📺 TODO: YouTube link?
 - 🗎 https://raw.githubusercontent.com/jackdbd/zig-bolognajs/main/assets/zig-bolognajs.pdf
 

@@ -38,6 +38,10 @@ src: ./slides/speaker.md
 ---
 
 ---
+src: ./slides/lets-use-zig-in-js.md
+---
+
+---
 src: ./slides/webassembly-demo.md
 ---
 
@@ -59,6 +63,14 @@ src: ./slides/wasm-api.md
 
 ---
 src: ./slides/wasm-api-implementation.md
+---
+
+---
+src: ./slides/translate-c-1.md
+---
+
+---
+src: ./slides/translate-c-2.md
 ---
 
 ---

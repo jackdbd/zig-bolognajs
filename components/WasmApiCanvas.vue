@@ -10,9 +10,9 @@ let canvas_in_dom = false;
 
 onMounted(async() => {
   // create new WASM bridge with extra API modules
-	bridge = new WasmBridge([new WasmCanvas2D(), new WasmDom()]);
+  bridge = new WasmBridge([new WasmCanvas2D(), new WasmDom()]);
   // instantiate WASM module & bindings
-	await bridge.instantiate(fetch(WASM_URL));
+  await bridge.instantiate(fetch(WASM_URL));
 })
 
 const onClick = (() => {

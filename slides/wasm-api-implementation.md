@@ -3,33 +3,32 @@ layout: two-cols
 ---
 # wasm-api (JS/TS)
 
-<Transform scale="0.75">
+<Transform scale="0.85">
+
 ```js
-import { WasmBridge } from "@thi.ng/wasm-api"
-import {
-  WasmCanvas2D
-} from "@thi.ng/wasm-api-canvas"
-import { WasmDom } from "@thi.ng/wasm-api-dom"
+import {WasmBridge} from "@thi.ng/wasm-api"
+import {WasmDom} from "@thi.ng/wasm-api-dom"
+import {WasmCanvas2D} from "@thi.ng/wasm-api-canvas"
 import WASM_URL from "/canvas.wasm?url"
 
-// create new WASM bridge with extra API modules
 const bridge = new WasmBridge([
   new WasmCanvas2D(), new WasmDom()]
 )
 
-// instantiate WASM module & bindings
 await bridge.instantiate(fetch(WASM_URL))
 
 // call WASM main function to kick off
 bridge.exports.start()
 ```
+
 </Transform>
 
 ::right::
 
 # wasm-api (Zig)
 
-<Transform scale="0.75">
+<Transform scale="0.85">
+
 ```zig
 const canvas2d = @import("wasm-api-canvas");
 const wasm = @import("wasm-api");
@@ -48,10 +47,8 @@ fn initApp() !void {
         .index = 0,
     });
 
-    // start using this canvas
     canvas2d.beginCtx(canvas);
 
-    // configure & draw text
     canvas2d.setFont("100px Menlo");
     canvas2d.setTextBaseline(.top);
     canvas2d.fillText("Ciao", 10, 10, 0);
@@ -62,4 +59,5 @@ export fn start() void {
     initApp() catch |e| @panic(@errorName(e));
 }
 ```
+
 </Transform>

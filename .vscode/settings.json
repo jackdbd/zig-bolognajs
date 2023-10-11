@@ -1,7 +1,6 @@
 {
-    "files.exclude": {
-      "**/dist/": false,
-      "**/node_modules/": true
-    }
+  "files.exclude": {
+    "**/dist/": false,
+    "**/node_modules/": true
   }
-  
+}
