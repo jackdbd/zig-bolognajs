@@ -76,7 +76,7 @@ zig build-exe main.zig -target wasm32-wasi
 
 Currently, every WASI-compliant runtime implements the file system interface with a libpreopen-like layer.
 
-This group proposed an alternative: [Leveraging eBPF to enhance sandboxing of
+This group proposes an alternative: [Leveraging eBPF to enhance sandboxing of
 WebAssembly runtimes (PDF)](https://cs.unibg.it/seclab-papers/2023/ASIACCS/poster/enhance-wasm-sandbox.pdf).
 
 </Transform>

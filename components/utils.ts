@@ -1,5 +1,6 @@
 const fosdem = /^https:\/\/.*fosdem\.org\/[0-9].+\/.*$/;
 const github = /^https:\/\/github\.com\/.*\/.*$/;
+const nodejs = /^https:\/\/nodejs\.org\/.*\/.*$/;
 const reddit = /^https:\/\/www\.reddit\.com\/r\/.*$/;
 const rust_docs = /^https:\/\/doc\.rust-lang\.org\/.*$/;
 const twitter = /^https:\/\/twitter\.com\/.*$/;
@@ -18,6 +19,14 @@ export const isFosdem = (s: string) => {
 
 export const isGitHub = (s: string) => {
   if (s.match(github)) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+export const isNodejs = (s: string) => {
+  if (s.match(nodejs)) {
     return true;
   } else {
     return false;

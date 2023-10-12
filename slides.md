@@ -42,10 +42,6 @@ src: ./slides/lets-use-zig-in-frontend-js.md
 ---
 
 ---
-src: ./slides/lets-use-zig-in-nodejs.md
----
-
----
 src: ./slides/webassembly-demo.md
 ---
 
@@ -63,6 +59,10 @@ src: ./slides/webassembly.md
 
 ---
 src: ./slides/checkerboard-wasm.md
+---
+
+---
+src: ./slides/lets-use-zig-in-nodejs.md
 ---
 
 ---

@@ -4,7 +4,7 @@ layout: default
 
 # WASI (JS)
 
-<Transform scale="0.95">
+<Transform scale="0.75">
 
 ```js
 import { readFile } from "node:fs/promises"
@@ -29,7 +29,12 @@ const wasm = await WebAssembly.compile(await readFile(new URL("main.wasm", impor
 const instance = await WebAssembly.instantiate(wasm, wasi.getImportObject())
 
 wasi.start(instance)
-
 ```
+
+The <Anchor href="https://nodejs.org/api/wasi.html" text="WebAssembly System Interface (WASI)" /> is still experimental.
+
+There is a discussion on <Anchor href="https://github.com/nodejs/node/issues/46254" text="marking the Node.js WASI module as stable" />.
+
+Launch with `node --experimental-wasi-unstable-preview1 app.js` in Node.js < `20.0.0`.
 
 </Transform>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { isFosdem, isGitHub, isReddit, isRust, isTwitter, isYouTube, isZig } from "./utils.js"
+import { isFosdem, isGitHub, isNodejs, isReddit, isRust, isTwitter, isYouTube, isZig } from "./utils.js"
 
 export interface Props {
   alt?: string
@@ -20,6 +20,8 @@ if (isFosdem(href.value)) {
   icon_type = 'fosdem'
 } else if (isGitHub(href.value)) {
   icon_type = 'github'
+} else if (isNodejs(href.value)) {
+  icon_type = 'nodejs'
 } else if (isReddit(href.value)) {
   icon_type = 'reddit'
 } else if (isRust(href.value)) {
@@ -72,6 +74,7 @@ const classObject = computed(() => ({
     {{ text }} 
     <FosdemLogo v-if="icon_type === 'fosdem'" />
     <carbon:logo-github v-else-if="icon_type === 'github'" />
+    <NodejsLogo v-else-if="icon_type === 'nodejs'" />
     <uim-reddit-alien-alt v-else-if="icon_type === 'reddit'" />
     <RustLogo v-else-if="icon_type === 'rust'" />
     <carbon:logo-twitter v-else-if="icon_type === 'twitter'" />
