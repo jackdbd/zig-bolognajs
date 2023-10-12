@@ -26,7 +26,7 @@ Let's say we have downloaded the Node.js <code class="inline-code">18.17.0</code
         └── zlib.h
 ```
 
-We can try translating them from C to Zig:
+We can try translating the header files from C to Zig:
 
 ```sh
 zig translate-c \

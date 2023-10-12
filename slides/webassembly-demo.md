@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# WebAssembly (demo)
+# Zig formatter in WebAssembly
 
 <div>
   <p>

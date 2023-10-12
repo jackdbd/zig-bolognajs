@@ -20,7 +20,7 @@ Understanding a generational garbage collector like Orinoco is much harder.
 - <Anchor href="https://youtu.be/Scxz6jVS4Ls" text="Orinoco: The new V8 Garbage Collector (Peter Marshall)" />
 - <Anchor 
   href="https://dmitrysoshnikov.teachable.com/p/essentials-of-garbage-collectors" 
-  text="Garbage Collection Algorithms — Dmitry Soshnikov" 
+  text="Garbage Collection Algorithms (Dmitry Soshnikov)" 
   alt="course on garbage collection algorithms by Dmitry Soshnikov" />
 
 </Transform>
@@ -45,7 +45,7 @@ In Zig, functions which need to allocate accept an <code class="inline-code">All
 
 - <Anchor 
   href="https://youtu.be/vHWiDx_l4V0" 
-  text="What's a Memory Allocator Anyway? - Benjamin Feng" 
+  text="What's a Memory Allocator Anyway? (Benjamin Feng)" 
   alt="Benjamin Feng explains what a memory allocator is, and showcases various memory allocators in Zig" />
 - <Anchor 
   href="https://www.lagerdata.com/articles/testing-memory-allocation-failures-with-zig" 

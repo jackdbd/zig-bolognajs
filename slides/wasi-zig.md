@@ -6,7 +6,7 @@ layout: two-cols
 
 <Transform scale="0.75">
 
-Import the `wasi` module from the standard library.
+Import the <code class="inline-code">wasi</code> module from the standard library.
 
 ```zig
 const std = @import("std");
@@ -15,7 +15,7 @@ const wasi = std.fs.wasi;
 pub fn main() !void {}
 ```
 
-Implement the `main` function (1/2).
+Implement the <code class="inline-code">main</code> function (1/2).
 
 ```zig
 var gpa = std.heap.GeneralPurposeAllocator(){};
@@ -48,7 +48,7 @@ if (fd == null) {
 
 <Transform scale="0.75">
 
-Implement the `main` function (2/2).
+Implement the <code class="inline-code">main</code> function (2/2).
 
 ```zig
 var dir = std.fs.Dir{ .fd = fd orelse unreachable };
@@ -74,7 +74,7 @@ Compile with:
 zig build-exe main.zig -target wasm32-wasi
 ```
 
-Currently, every WASI-compliant runtime implements the file system interface with a libpreopen-like layer.
+Every WASI-compliant runtime implements the file system interface with a libpreopen-like layer.
 
 This group proposes an alternative: [Leveraging eBPF to enhance sandboxing of
 WebAssembly runtimes (PDF)](https://cs.unibg.it/seclab-papers/2023/ASIACCS/poster/enhance-wasm-sandbox.pdf).

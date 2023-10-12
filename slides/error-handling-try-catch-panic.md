@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-# <code class="inline-code">try</code> / <code class="inline-code">catch</code> / <code class="inline-code">@panic</code>
+
+<h1><code class="inline-code">try</code> / <code class="inline-code">catch</code> / <code class="inline-code">@panic</code></h1>
 
 <Transform scale="0.85">
 

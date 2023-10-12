@@ -21,11 +21,8 @@ layout: default
   href="https://zig.news/toxi/typepointer-cheatsheet-3ne2" 
   text="Type/pointer cheatsheet" 
   alt="article Type/pointer cheatsheet by Karsten Schmidt on zig.news" />
-- Join ~~<Anchor href="https://www.reddit.com/r/Zig/" text="r/Zig" />~~ <Anchor href="https://ziggit.dev/" text="Ziggit" /> and/or <Anchor href="https://github.com/ziglang/zig/wiki/Community" text="other communities"/> and read/ask/answer questions.
-
-<p>
-🗣️ All talks on <Anchor href="https://www.youtube.com/@ZigSHOWTIME" text="Zig SHOWTIME" /> and <Anchor href="https://www.youtube.com/@zigmeetups6619" text="Zig Meetups" /> are worth watching.
-</p>
+- Join ~~<Anchor href="https://www.reddit.com/r/Zig/" text="r/Zig" />~~ <Anchor href="https://ziggit.dev/" text="Ziggit" /> and/or <Anchor href="https://github.com/ziglang/zig/wiki/Community" text="other communities"/> and read/ask/answer questions
+- Subscribe to <Anchor href="https://www.youtube.com/@ZigSHOWTIME" text="Zig SHOWTIME" /> and <Anchor href="https://www.youtube.com/@zigmeetups6619" text="Zig Meetups" />
 
 </Transform>
 

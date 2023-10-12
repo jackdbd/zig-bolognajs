@@ -20,7 +20,7 @@ const {
   fetch('checkerboard.wasm'), importObject)
 ```
 
-These functions are defined in `checkerboard.zig` using `export fn`.
+<p>These functions are defined in <code class="inline-code">checkerboard.zig</code> using <code class="inline-code">export fn</code>.</p>
 
 ```js
 const {
@@ -39,7 +39,7 @@ Get the canvas from the DOM, get a memory slice representing a 1D RGBA array, us
 
 <Transform scale="0.75">
 
-Define functions and `export` them.
+<p>Define functions and <code class="inline-code">export</code> them.</p>
 
 ```zig
 const std = @import("std");

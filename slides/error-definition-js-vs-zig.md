@@ -1,11 +1,9 @@
 ---
 layout: two-cols
 ---
-<h1>Defining errors in JS</h1>
+<h1>Defining errors in <NodejsLogo /></h1>
 
 <Transform scale="0.85">
-
-<p>Don't. Or do it only once.</p>
 
 <Citation
   author="nodebestpractices"
@@ -16,17 +14,35 @@ layout: two-cols
   </template>
 </Citation>
 
-Example: Hapi web apps/APIs use <Anchor href="https://hapi.dev/module/boom/" text="Boom" />.
+<p><Anchor href="https://hapi.dev/module/boom/api/" text="Boom (Hapi.js)" /> represents all HTTP errors with a <span class="color:accent">single</span> class that extends <code class="inline-code">Error</code>.</p>
+
+```js
+exports.Boom = class extends Error {
+  constructor(messageOrError, options = {}) {
+    // ...
+  }
+}
+```
+
+<p><Anchor href="https://github.com/fastify/fastify-error/tree/master" text="@fastify/error" /> defines this factory function.</p>
+
+```js
+function createError (
+  code, message, statusCode = 500, Base = Error
+) {
+  // ...
+}
+```
 
 </Transform>
 
 ::right::
 
-<h1>Defining errors in Zig</h1>
+<h1>Defining errors in <ZigLogo /></h1>
 
 <Transform scale="0.85">
 
-<p>Use an <Anchor href="https://ziglang.org/documentation/0.10.1/#Error-Set-Type" text="Error Set"/>.</p>
+<p>Define an <Anchor href="https://ziglang.org/documentation/0.10.1/#Error-Set-Type" text="error set type"/></p>
 
 ```text
 const NumberNotInRangeError = error{
@@ -38,7 +54,7 @@ const NumberNotInRangeError = error{
 The return type of a Zig function that might fail is:
 
 ```text
-<error set>!<expected type>
+<error set type>!<expected type>
 ```
 
 Zig errors cannot have a payload.
@@ -50,6 +66,8 @@ Zig errors cannot have a payload.
 
 <!--
 Boom errors contain additional payload and methods for returning HTTP status codes in a consistent way.
+
+I don't like the Fastify approach. It does not enforce a single error type, so in theory I could create many subclasses of Error. This approach would be typical in Python (where it's standard practice to define many exceptions), but it's not a good idea in JS.
 
 Zig errors are basically like C return codes.
 -->

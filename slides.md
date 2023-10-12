@@ -102,6 +102,10 @@ src: ./slides/lets-use-zig-in-frontend-js.md
 ---
 
 ---
+src: ./slides/webassembly.md
+---
+
+---
 src: ./slides/webassembly-demo.md
 ---
 
@@ -111,10 +115,6 @@ src: ./slides/checkerboard.md
 
 ---
 src: ./slides/checkerboard-implementation.md
----
-
----
-src: ./slides/webassembly.md
 ---
 
 ---

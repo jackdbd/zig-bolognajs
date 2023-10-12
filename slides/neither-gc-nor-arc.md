@@ -54,6 +54,8 @@ GObject's use of GLib's <code class="inline-code">g_malloc()</code> memory alloc
 </Transform>
 
 <!--
+ARC: Automatic Reference Counting
+
 Allocation might fail, so you have to handle failure.
 Deallocation must always succeed.
 

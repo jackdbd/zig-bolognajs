@@ -16,7 +16,7 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 const btnLabel = computed(() => {
-  return `Click me ${EMOJI.CLICK}`
+  return `click ${EMOJI.CLICK}`
 })
 
 let fmt = ref(props.fmt)

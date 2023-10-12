@@ -36,7 +36,7 @@ pub extern fn napi_create_string_utf8(
 
 <Transform scale="0.9">
 
-The translation might not be complete, so check:
+The translation might not be perfect, so check:
 
 ```sh
 cat napi_api.zig  | grep 'unable to translate'
@@ -47,7 +47,7 @@ We can use <code class="inline-code">zig translate-c</code> to:
 - <Anchor href="https://zig.news/sobeston/using-zig-and-translate-c-to-understand-weird-c-code-4f8" text="understand weird C code" /> (e.g. learn about the symbols exported by a C library)
 - produce Zig code before editing it into more idiomatic code (e.g. when we want to create a Zig wrapper for a C library)
 
-For example, we can convert [napi_status](napi_status) into this:
+For example, we could convert [napi_status](napi_status) into this:
 
 ```zig
 pub const Status = enum(u5) {

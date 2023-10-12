@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Why not C / C++ / Rust?
+<h1>Why not C / C++ / Rust? <RustLogo /></h1>
 
 <Transform scale="0.85">
 

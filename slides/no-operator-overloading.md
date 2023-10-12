@@ -69,4 +69,6 @@ Arguments in favor of / against operator overloading.
 
 <!--
 Operator overloading can be very useful, but there is often a concern that it hinders the ability to understand code at first glance: not only may you have to check whether + really means add, but it hides a function call. One of Zig's main objectives is clarity, so this makes operator overloading a no-go.
+
+JavaScript doesn't support operator overloading. But Python does support it. That's why I make a Python example in this slide.
 -->

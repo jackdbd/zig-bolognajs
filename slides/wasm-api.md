@@ -10,3 +10,7 @@ Render DOM elements in WASM using <Anchor href="https://github.com/thi-ng/umbrel
 <WasmApiCanvas />
 
 </Transform>
+
+<!--
+Writing hybrid apps with Zig and JS requires quite a lot of glue code. We can avoid it using wasp-api.
+-->

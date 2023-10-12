@@ -1,7 +1,7 @@
 ---
 layout: two-cols
 ---
-<h1>Handling failures in JS</h1>
+<h1>Handling failures in <NodejsLogo /></h1>
 
 <Transform scale="0.85">
 
@@ -37,7 +37,7 @@ main()
 
 ::right::
 
-<h1>Handling failures in Zig</h1>
+<h1>Handling failures in <ZigLogo /></h1>
 
 <Transform scale="0.85">
 

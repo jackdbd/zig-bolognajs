@@ -35,6 +35,6 @@ The <Anchor href="https://nodejs.org/api/wasi.html" text="WebAssembly System Int
 
 There is a discussion on <Anchor href="https://github.com/nodejs/node/issues/46254" text="marking the Node.js WASI module as stable" />.
 
-Launch with `node --experimental-wasi-unstable-preview1 app.js` in Node.js < `20.0.0`.
+<p>Launch with <code class="inline-code">node --experimental-wasi-unstable-preview1 app.js</code> in Node.js &lt <code class="inline-code">20.0.0</code>.</p>
 
 </Transform>

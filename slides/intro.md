@@ -8,9 +8,9 @@ layout: cover
 
 - <Anchor href="https://zig-bolognajs.vercel.app/" text="https://zig-bolognajs.vercel.app/" />
 - <Anchor href="https://www.meetup.com/it-IT/bologna-js-meetup/events/296655951/" text="https://www.meetup.com/it-IT/bologna-js-meetup/events/296655951/" />
-- <Anchor href="https://github.com/jackdbd/zig-bolognajs" text="https://github.com/jackdbd/zig-bolognajs" />
-- <Anchor href="https://github.com/jackdbd/zig-demos" text="https://github.com/jackdbd/zig-demos" />
-- <Anchor href="https://github.com/jackdbd/zig-nodeapi-example" text="https://github.com/jackdbd/zig-nodeapi-example" />
+- <Anchor href="https://github.com/jackdbd/zig-bolognajs" text="jackdbd/zig-bolognajs" />
+- <Anchor href="https://github.com/jackdbd/zig-demos" text="jackdbd/zig-demos" />
+- <Anchor href="https://github.com/jackdbd/zig-nodeapi-example" text="jackdbd/zig-nodeapi-example" />
 
 <!--
 In this presentation we will talk about:
