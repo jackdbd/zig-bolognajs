@@ -158,5 +158,9 @@ src: ./slides/compilation-targets.md
 ---
 
 ---
+src: ./slides/build-modes.md
+---
+
+---
 src: ./slides/how-to-learn-zig.md
 ---
