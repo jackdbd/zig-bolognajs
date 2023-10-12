@@ -13,7 +13,10 @@
     "serve": "http-server ./dist --port 8080",
     "test": "zig build test-checkerboard && zig build test-fmt",
     "update-git-hooks": "npx simple-git-hooks",
-    "view:pdf": "atril assets/zig-bolognajs.pdf"
+    "view:pdf": "atril assets/zig-bolognajs.pdf",
+    "wasi:build": "zig build-exe wasi-example/main.zig -target wasm32-wasi -O ReleaseFast -femit-bin=wasi-example/main.wasm",
+    "wasi:build:debug": "zig build-exe wasi-example/main.zig -target wasm32-wasi -O Debug -femit-bin=wasi-example/main.wasm",
+    "wasi:run": "node wasi-example/index.mjs /docs/in.txt /generated/out.txt"
   },
   "dependencies": {
     "@slidev/cli": "^0.43.7",

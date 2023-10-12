@@ -38,7 +38,11 @@ src: ./slides/speaker.md
 ---
 
 ---
-src: ./slides/lets-use-zig-in-js.md
+src: ./slides/lets-use-zig-in-frontend-js.md
+---
+
+---
+src: ./slides/lets-use-zig-in-nodejs.md
 ---
 
 ---
@@ -54,7 +58,19 @@ src: ./slides/checkerboard-implementation.md
 ---
 
 ---
+src: ./slides/webassembly.md
+---
+
+---
 src: ./slides/checkerboard-wasm.md
+---
+
+---
+src: ./slides/wasi-js.md
+---
+
+---
+src: ./slides/wasi-zig.md
 ---
 
 ---

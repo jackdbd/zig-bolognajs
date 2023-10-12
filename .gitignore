@@ -7,6 +7,9 @@ node_modules/
 # build directory that will be deployed
 dist/
 
+wasi-example/main.wasm
+wasi-example/main.wasm.o
+
 # cache directory used by the zig compiler
 zig-cache/
 

@@ -1,7 +1,7 @@
 ---
 layout: two-cols
 ---
-# Checkerboard (JS/TS)
+# Checkerboard (JS)
 
 <Transform scale="0.75">
 
