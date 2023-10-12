@@ -38,6 +38,62 @@ src: ./slides/speaker.md
 ---
 
 ---
+src: ./slides/meme-vince.md
+---
+
+---
+src: ./slides/learn-zig-to-learn-how-computers-work.md
+---
+
+---
+src: ./slides/what-zig-leaves-out.md
+---
+
+---
+src: ./slides/neither-gc-nor-arc.md
+---
+
+---
+src: ./slides/memory-allocation.md
+---
+
+---
+src: ./slides/memory-allocators.md
+---
+
+---
+src: ./slides/no-string-type.md
+---
+
+---
+src: ./slides/no-operator-overloading.md
+---
+
+---
+src: ./slides/no-exceptions.md
+---
+
+---
+src: ./slides/error-handling-intro.md
+---
+
+---
+src: ./slides/error-definition-js-vs-zig.md
+---
+
+---
+src: ./slides/error-handling-js-vs-zig.md
+---
+
+---
+src: ./slides/error-handling-try-catch-panic.md
+---
+
+---
+src: ./slides/error-handling-tips.md
+---
+
+---
 src: ./slides/lets-use-zig-in-frontend-js.md
 ---
 
@@ -87,6 +143,10 @@ src: ./slides/translate-c-1.md
 
 ---
 src: ./slides/translate-c-2.md
+---
+
+---
+src: ./slides/compilation-targets.md
 ---
 
 ---
