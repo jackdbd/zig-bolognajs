@@ -1,6 +1,7 @@
 ---
 layout: cover
 ---
+
 <h1><span class="color:zig">Zig:</span> il controllo e la potenza del C, senza spararsi sui piedi 🔫</h1>
 
 <!-- Quick links: -->

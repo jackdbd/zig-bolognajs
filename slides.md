@@ -46,6 +46,10 @@ src: ./slides/learn-zig-to-learn-how-computers-work.md
 ---
 
 ---
+src: ./slides/why-zig-and-not-x.md
+---
+
+---
 src: ./slides/what-zig-leaves-out.md
 ---
 

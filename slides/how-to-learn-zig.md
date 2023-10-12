@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-# How to learn Zig?
+
+<h1>How to learn <span class="color:zig">Zig</span>?</h1>
 
 <Transform scale="1">
 
