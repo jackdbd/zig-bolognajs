@@ -6,21 +6,32 @@ const dom = @import("wasm-api-dom");
 pub usingnamespace wasm;
 
 fn initApp() !void {
+    // UnoCSS classes
+    // https://unocss.dev/interactive/
+    const div = dom.createElement(&.{
+        .tag = "div",
+        .class = "imposter",
+        .id = "canvas-container",
+        .parent = dom.body,
+    });
+
+    var window: dom.WindowInfo = undefined;
+    dom.getWindowInfo(&window);
+
     const canvas = dom.createCanvas(&.{
         .width = 640,
         .height = 480,
         // .parent = dom.getElementByID("canvas-container"),
-        .parent = dom.body,
+        .parent = div,
+        // .parent = dom.body,
         // can be customized for HDPI screens (aka window.devicePixelRatio)
-        // see readme section below
-        .dpr = 1,
+        // .dpr = 1,
+        .dpr = window.dpr,
         .index = 0,
     });
 
-    // start using this canvas
     canvas2d.beginCtx(canvas);
 
-    // set fill color (any CSS color)
     canvas2d.setFill("#f0f");
 
     // draw a triangle
@@ -33,13 +44,13 @@ fn initApp() !void {
     // (could also be shortened via this helper:)
     // canvas2d.polyline(&.{ .{ 250, 50 }, .{ 150, 250 }, .{ 50, 100 } }, true);
 
-    const gradient = canvas2d.createLinearGradient(0, 0, 0, 100, &.{
+    const gradient1 = canvas2d.createLinearGradient(0, 0, 0, 100, &.{
         .{ .pos = 0.0, .color = "#ff0" },
         // .{ .pos = 0.0, .color = "rgb(255, 255, 0)" },
         .{ .pos = 1.0, .color = "#0ff" },
         // .{ .pos = 0.0, .color = "rgb(0, 255, 255)" },
     });
-    canvas2d.setGradientFill(gradient);
+    canvas2d.setGradientFill(gradient1);
 
     // configure & draw text
     canvas2d.setFont("100px Menlo");
@@ -60,7 +71,6 @@ fn initApp() !void {
     // use pattern as fill color
     // canvas2d.setPatternFill(pattern);
     canvas2d.fillText("Bologna JS", 10, 120, 0);
-    // canvas2d.fillText("WORLD", 10, 120, 0);
 }
 
 export fn start() void {

@@ -20,7 +20,7 @@ const onClick = (() => {
     canvas_in_dom = true;
     // call WASM main function to kick off
     bridge.exports.start();
-    const el = document.querySelector('body > canvas')
+    const el = document.querySelector('.imposter')
     if (el) {
       el.classList.add("imposter", "wasm-api-canvas")
     }
@@ -28,7 +28,7 @@ const onClick = (() => {
 })
 
 const onClickRemoveCanvas = (() => {
-  const el = document.querySelector('body > canvas')
+  const el = document.querySelector('.imposter')
   if (el) {
     el.remove()
     canvas_in_dom = false;

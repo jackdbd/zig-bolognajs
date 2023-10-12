@@ -107,10 +107,15 @@
   width: 80%;
 }
 
-.wasm-api-canvas {
-  --offset-top-percent: -30%;
+#canvas-container {
+  --offset-top-percent: -25%;
 
+  width: clamp(25vw, 100%, 40vw);
+  max-height: 40vw;
   border-radius: 0.25em;
   outline: 0.15rem solid var(--color-accent);
-  z-index: 1;
+}
+
+#canvas-container canvas {
+  width: 100%;
 }
