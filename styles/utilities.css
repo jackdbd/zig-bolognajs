@@ -85,7 +85,24 @@
 .left\:10\% {
   left: 10%;
 }
-  
+
+.pad-h\:1em {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.right\:half-space {
+  right: calc(var(--space) / 2);
+}
+
+.space\:1em {
+  --space: 1em;
+}
+
+.top\:half-space {
+  top: calc(var(--space) / 2);
+}
+
 .width\:80\% {
   width: 80%;
 }

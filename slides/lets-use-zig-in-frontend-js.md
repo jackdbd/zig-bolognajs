@@ -1,4 +1,4 @@
 ---
 layout: cover
 ---
-<h1>Let's use <ZigLogo /> in <JavaScriptLogo /></h1>
+<h1>Let's use <ZigLogo /> in <JavaScriptLogo /> with <WebAssemblyLogo /></h1>

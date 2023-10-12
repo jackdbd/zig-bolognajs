@@ -118,18 +118,6 @@ src: ./slides/checkerboard-wasm.md
 ---
 
 ---
-src: ./slides/lets-use-zig-in-nodejs.md
----
-
----
-src: ./slides/wasi-js.md
----
-
----
-src: ./slides/wasi-zig.md
----
-
----
 src: ./slides/wasm-api.md
 ---
 
@@ -138,11 +126,27 @@ src: ./slides/wasm-api-implementation.md
 ---
 
 ---
+src: ./slides/lets-use-zig-in-nodejs.md
+---
+
+---
 src: ./slides/translate-c-1.md
 ---
 
 ---
 src: ./slides/translate-c-2.md
+---
+
+---
+src: ./slides/lets-use-zig-in-nodejs-with-wasi.md
+---
+
+---
+src: ./slides/wasi-js.md
+---
+
+---
+src: ./slides/wasi-zig.md
 ---
 
 ---

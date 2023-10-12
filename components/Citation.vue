@@ -33,10 +33,17 @@ blockquote {
 </style>
 
 <template>
-  <blockquote :cite="citeHref">
-    <slot name="quote"><p>Quote here</p></slot>
-    <p v-if="author" class="author">—{{ author }}</p>
-    <footer v-if="citeText && citeHref" class="important-mt-2">Source: <Anchor :href="`${citeHref}`" :text="`${citeText}`" /></footer>
-    <footer v-else-if="citeText && !citeHref" class="important-mt-2">Source: <span>{{ citeText }}</span></footer>
+  <blockquote class="box position-relative" :cite="citeHref">
+    <div class="stack space:1em">
+      <div>
+        <slot name="quote"><p>Quote here</p></slot>
+        <p v-if="author" class="author">—{{ author }}</p>
+      </div>
+      <div class="position-absolute top:half-space right:half-space">
+        <QuotesSvg />
+      </div>
+      <footer v-if="citeText && citeHref" class="">Source: <Anchor :href="`${citeHref}`" :text="`${citeText}`" /></footer>
+      <footer v-else-if="citeText && !citeHref" class="">Source: <span>{{ citeText }}</span></footer>
+    </div>
   </blockquote>
 </template>

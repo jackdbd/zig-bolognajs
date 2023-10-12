@@ -1,3 +1,7 @@
+.box {
+  padding: var(--space, 1em) !important;
+}
+
 /* https://every-layout.dev/layouts/icon/ */
 .icon {
   display: inline;
@@ -20,12 +24,11 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-  
-.stack > * {
+
+.stack > *:not(.position-absolute) {
   margin-block: 0;
 } 
   
-.stack > * + * {
+.stack > * + *:not(.position-absolute) {
   margin-block-start: var(--space, 1.5rem);
 }
-  
