@@ -17,6 +17,7 @@ layout: default
 
 - Watch <Anchor href="https://youtu.be/NQgju_2mX-8" text="Reading Zig's Standard Library" />
 - Write tests, especially <Anchor href="https://www.lagerdata.com/articles/testing-memory-allocation-failures-with-zig" text="allocation failures usin std.testing.FailingAllocator" />
+- Have a look at <Anchor href="https://github.com/jackdbd/zig-demos" text="jackdbd/zig-demos" />
 - Review <Anchor 
   href="https://zig.news/toxi/typepointer-cheatsheet-3ne2" 
   text="Type/pointer cheatsheet" 

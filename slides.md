@@ -186,5 +186,13 @@ src: ./slides/wasi-on-other-runtimes.md
 ---
 
 ---
+src: ./slides/how-to-get-zig.md
+---
+
+---
+src: ./slides/how-to-setup-vscode.md
+---
+
+---
 src: ./slides/how-to-learn-zig.md
 ---

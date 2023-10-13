@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1>Addon with <span class="color:accent">Node-API</span> 2/2</h1>
+<h1>Node.js addon with <span class="color:accent">Node-API</span> 2/2</h1>
 
 <Transform scale="0.8">
 
