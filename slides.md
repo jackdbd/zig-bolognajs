@@ -146,6 +146,18 @@ src: ./slides/translate-c-2.md
 ---
 
 ---
+src: ./slides/create-a-zig-wrapper-of-a-c-library.md
+---
+
+---
+src: ./slides/nodejs-addon-with-node-api-1.md
+---
+
+---
+src: ./slides/nodejs-addon-with-node-api-2.md
+---
+
+---
 src: ./slides/compilation-targets.md
 ---
 
