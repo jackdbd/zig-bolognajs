@@ -8,7 +8,7 @@ layout: default
   </p>
 </div>
 
-<Transform :scale="0.75">
+<Transform :scale="1">
 
 <v-click>
 
@@ -33,7 +33,7 @@ Generates <code class="inline-code">lib.wasm</code>.
 ```sh {all|2|all}
 zig build-exe src/main.zig \
   -target wasm32-wasi-musl \
-  -O ReleaseSmall
+  -O ReleaseFast
 ```
 
 Generates <code class="inline-code">main.wasm</code>.

@@ -4,7 +4,7 @@ layout: default
 ---
 # Build modes (optimizations)
 
-<Transform scale="0.75">
+<Transform scale="0.8">
 
 | Mode | Compilation speed | Safety checks | Runtime performance | Binary size | Reproducible build |
 | --- | --- | --- | --- | --- | --- |
