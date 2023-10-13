@@ -4,11 +4,9 @@ layout: cover
 
 <h1><span class="color:zig">Zig:</span> il controllo e la potenza del C, senza spararsi sui piedi 🔫</h1>
 
-<!-- Quick links: -->
-
-- <Anchor href="https://zig-bolognajs.vercel.app/" text="https://zig-bolognajs.vercel.app/" />
-- <Anchor href="https://www.meetup.com/it-IT/bologna-js-meetup/events/296655951/" text="https://www.meetup.com/it-IT/bologna-js-meetup/events/296655951/" />
+- <Anchor href="https://zig-bolognajs.vercel.app/" text="zig-bolognajs.vercel.app" />
 - <Anchor href="https://github.com/jackdbd/zig-bolognajs" text="jackdbd/zig-bolognajs" />
+- <Anchor href="https://www.meetup.com/it-IT/bologna-js-meetup/events/296655951/" text="www.meetup.com/it-IT/bologna-js-meetup/events/296655951" />
 
 <!--
 In this presentation we will talk about:

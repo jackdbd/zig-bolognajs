@@ -1,11 +1,8 @@
 ---
 layout: two-cols
 ---
-<h1>
-<Anchor 
-  href="https://github.com/ziglang/zig/blob/master/lib/std/heap.zig" 
-  text="std.heap" />
-</h1>
+
+<h1><Anchor href="https://github.com/ziglang/zig/blob/master/lib/std/heap.zig" text="std.heap" /></h1>
 
 <Transform scale="0.85">
 
