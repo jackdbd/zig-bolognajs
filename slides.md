@@ -38,15 +38,15 @@ src: ./slides/speaker.md
 ---
 
 ---
+src: ./slides/why-zig-and-not-x.md
+---
+
+---
 src: ./slides/meme-vince.md
 ---
 
 ---
 src: ./slides/learn-zig-to-learn-how-computers-work.md
----
-
----
-src: ./slides/why-zig-and-not-x.md
 ---
 
 ---
@@ -134,11 +134,23 @@ src: ./slides/lets-use-zig-in-nodejs.md
 ---
 
 ---
+src: ./slides/calling-zig-from-nodejs.md
+---
+
+---
 src: ./slides/translate-c-1.md
 ---
 
 ---
 src: ./slides/translate-c-2.md
+---
+
+---
+src: ./slides/compilation-targets.md
+---
+
+---
+src: ./slides/build-modes.md
 ---
 
 ---
@@ -154,11 +166,11 @@ src: ./slides/wasi-zig.md
 ---
 
 ---
-src: ./slides/compilation-targets.md
+src: ./slides/lets-use-zig-in-other-runtimes.md
 ---
 
 ---
-src: ./slides/build-modes.md
+src: ./slides/wasi-on-other-runtimes.md
 ---
 
 ---
