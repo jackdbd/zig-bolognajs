@@ -10,7 +10,7 @@ The deallocation code is always directly following the allocation code.
 
 Resource cleanup is done using <code class="inline-code">errdefer</code>.
 
-```zig {all|2,8,13,17|11|all|2,8|6|all|2,8,13,17|6,11|all}
+```zig {all|2,8,13,17|11|all|2,8|6|all|2,8,13|6,11|all}
 fn createFoo(param: i32) !Foo {
     const foo = try tryToAllocateFoo();
 
