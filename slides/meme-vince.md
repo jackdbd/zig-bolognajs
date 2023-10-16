@@ -6,4 +6,7 @@ layout: center
 
 <!--
 My reactions while I was reading the first post about Zig.
+
+C and C++ basically need to use Emscripten to compile to WebAssembly.
+Rust can use either Emscripten or wasm-pack.
 -->

@@ -10,7 +10,7 @@ The deallocation code is always directly following the allocation code.
 
 Resource cleanup is done using <code class="inline-code">errdefer</code>.
 
-```zig
+```zig {all|2,8,13,17|11|all|2,8|6|all|2,8,13,17|6,11|all}
 fn createFoo(param: i32) !Foo {
     const foo = try tryToAllocateFoo();
 
@@ -36,5 +36,9 @@ This passage of <Anchor href="https://youtu.be/Gv2I7qTux7g?t=1927" text="The Roa
 </Transform>
 
 <!--
+1st click: happy path
+2nd click: error path OutOfMemory
+3rd click: error path InvalidParam
+
 I think in C++ we would use RAII to implement a function like createFoo(), but we wouldn't have this fine control on resource deallocation.
 -->
