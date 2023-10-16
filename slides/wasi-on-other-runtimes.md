@@ -69,13 +69,13 @@ export default {
 <!--
 The ones within brackets are JS engines.
 
-Clouflare implemented its own JS/WASM runtime based on V8. workerd is the open
+Clouflare implemented its own JS/WASM runtime based on V8. [workerd](https://github.com/cloudflare/workerd) is the open
 source version of the JS/WASM runtime that powers Cloudflare Workers. It has
 feature-parity with the Cloudflare Workers runtime.
-https://github.com/cloudflare/workerd
 
 JS + WASM => no need for containers.
-Watch this talk: Fine-Grained Sandboxing with V8 Isolates
+
+Watch this talk: [Fine-Grained Sandboxing with V8 Isolates](https://www.infoq.com/presentations/cloudflare-v8/)
 
 Beware of platform limitations. For example:
 

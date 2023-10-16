@@ -31,5 +31,5 @@ fn foo() void {
 </Transform>
 
 <!--
-You can use @setRuntimeSafety() at any scope, so the value can be overridden at any scope.
+You can use `@setRuntimeSafety()` at any scope, so the value can be overridden at any scope.
 -->

@@ -42,7 +42,7 @@ main()
 <Transform scale="0.85">
 
 <span>In Zig, <code class="inline-code">catch</code> catches <span class="color:accent">errors</span>.</span><br>
-<span>Zig functions can <code class="inline-code">return</code> possible error values → An error type is a set of all possible values.</span><br>
+<span>Zig functions can <code class="inline-code">return</code> possible error values → An error type is a set of all possible error values.</span><br>
 <span>We <span class="color:accent">know</span> what we caught.</span>
 
 ```text

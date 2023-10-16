@@ -14,5 +14,5 @@ layout: cover
 </Citation>
 
 <!--
-Andrew shows that in C the easiest path is to not deal with errors at all. And this is obviously not good.
+Andrew in the talk The Road to Zig 1.0 shows that in C the easiest path is to not deal with errors at all. And this is obviously not good.
 -->

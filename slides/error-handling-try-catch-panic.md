@@ -35,8 +35,7 @@ When <code class="inline-code">@panic</code> is called, you get a <span class="c
 </Transform>
 
 <!--
-The nodebestpractices repo is clear on the distinction between operational errors and programmer errors.
-https://github.com/goldbergyoni/nodebestpractices/blob/master/sections/errorhandling/operationalvsprogrammererror.md
+The nodebestpractices repo is clear on the distinction between [operational errors and programmer errors](https://github.com/goldbergyoni/nodebestpractices/blob/master/sections/errorhandling/operationalvsprogrammererror.md).
 
 **Operational errors** refer to situations where you understand what happened and the impact of it – for example, a query to some HTTP service failed due to connection problem. Operational errors are relatively easy to handle.
 

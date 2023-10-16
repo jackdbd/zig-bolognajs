@@ -3,7 +3,7 @@ layout: two-cols
 ---
 # No exceptions
 
-<Transform scale="0.75">
+<Transform scale="0.85">
 
 Exceptions make cleaning up resources problematic.
 
@@ -36,23 +36,7 @@ Exceptions hide control flow.
 
 # What about Zig?
 
-<Transform scale="0.75">
-
-Resource cleanup is done using <code class="inline-code">errdefer</code>.
-
-```text
-fn createFoo() !Foo {
-    const foo = try tryToAllocateFoo();
-
-    // this runs every time
-    defer std.debug.print("runs every time", .{});
-
-    // this runs ONLY when tryToAllocateFoo fails
-    errdefer deallocateFoo(foo);
-
-    return foo;
-}
-```
+<Transform scale="0.85">
 
 Errors can be handled like any other value.
 
@@ -76,5 +60,4 @@ fn doAThing(str: []u8) void {
 </Transform>
 
 <!--
-https://ziglang.org/documentation/master/#errdefer
 -->

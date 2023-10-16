@@ -71,7 +71,7 @@ The first 128 code points (ASCII) need one byte.
 
 The next 1,920 code points need two bytes to encode, which covers the remainder of almost all Latin-script alphabets, and also IPA extensions, Greek, Cyrillic, Coptic, Armenian, Hebrew, Arabic, Syriac, Thaana and N'Ko alphabets, as well as Combining Diacritical Marks.
 
-Three bytes are needed for the remaining 61,440 code points of the Basic Multilingual Plane (BMP), which are virtually all the rest in common use,[19] including most Chinese, Japanese and Korean characters.
+Three bytes are needed for the remaining 61,440 code points of the Basic Multilingual Plane (BMP), which are virtually all the rest in common use, including most Chinese, Japanese and Korean characters.
 
 Four bytes are needed for the 1,048,576 code points in the other planes of Unicode, which include less common CJK characters, various historic scripts, mathematical symbols, and emoji (pictographic symbols).
 -->

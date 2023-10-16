@@ -3,12 +3,9 @@ layout: default
 ---
 <h1>WebAssembly <WebAssemblyLogo /></h1>
 
-<div>
-  <p>Zig supports building for WebAssembly <Anchor href="https://ziglang.org/documentation/master/#Freestanding" text="out of the box" />
-  </p>
-</div>
-
 <Transform :scale="1">
+
+Zig supports building for WebAssembly <Anchor href="https://ziglang.org/documentation/master/#Freestanding" text="out of the box" />
 
 <v-click>
 
@@ -43,8 +40,4 @@ Generates <code class="inline-code">main.wasm</code>.
 </Transform>
 
 <!--
-For host environments like the web browser and nodejs, build as a dynamic library using the freestanding OS target.
-
-Zig loves WASI! - Jakub Konka
-https://youtu.be/g_Degmqfo4Q
 -->

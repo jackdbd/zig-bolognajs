@@ -35,5 +35,4 @@ pub fn Int(comptime signedness: std.builtin.Signedness, comptime bit_count: u16)
 </Transform>
 
 <!--
-Notes
 -->

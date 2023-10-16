@@ -94,6 +94,10 @@ src: ./slides/error-handling-js-vs-zig.md
 ---
 
 ---
+src: ./slides/defer-and-errdefer.md
+---
+
+---
 src: ./slides/error-handling-try-catch-panic.md
 ---
 

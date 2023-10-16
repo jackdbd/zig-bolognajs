@@ -40,7 +40,7 @@ layout: two-cols
 - Garbage collected
 - ["Closed-world" language](https://fasterthanli.me/articles/lies-we-tell-ourselves-to-keep-using-golang)
 
-<br/>
+<br>
 
 <Citation
   citeHref="https://ziglang.org/learn/why_zig_rust_d_cpp/"
@@ -57,9 +57,9 @@ In C, preprocessor macros transform your program **before** actual compilation.
 
 I can't say much about Go. I wrote only a few hundred lines of Go.
 
-Linus Torvalds' quote about C++: C++ is a horrible language
+Linus Torvalds' quote about C++: C++ is a horrible language.
+
 The author of ZeroMQ did NOT use C++ exceptions, but in the constructor/destructur you kind of have to use them.
-The Google style guide prohibits the use of C++ exceptions. https://google.github.io/styleguide/cppguide.html#Exceptions
 
 Explain what ZeroMQ is. And why C is a better candidate than C++ for this kind of fault-tolerant software.
 
@@ -67,12 +67,17 @@ Consider what happens when **initialisation** of an object can fail. Constructor
 
 Moreover, even if initialisation wasn't a problem, **termination** definitely is. You can't really throw exceptions in the destructor. Not because of some self-imposed artificial restrictions but because if the destructor is invoked in the process or unwinding the stack and it happens to throw an exception, it crashes the entire process.
 
+The Google style guide prohibits the use of C++ exceptions. https://google.github.io/styleguide/cppguide.html#Exceptions
+
 With regards to RAII (as in constructors/destructors, not the stuff in the issue you linked), I think it simply didn't fit within Zig's goals. A big part of Zig is readability; what you read is what you get, and RAII is very much not that. Looking at a block of C++ code, there's no way to tell what happens unless you also know what the constructors/destructors of each data type in the block does.
 https://news.ycombinator.com/item?id=27401371
 
 https://nikhilism.com/post/2021/raii-footguns-rust-cpp/
 
-Other names for RAII include Constructor Acquires, Destructor Releases (CADRe)[10] and one particular style of use is called Scope-based Resource Management (SBRM). This latter term is for the special case of automatic variables. RAII ties resources to object lifetime, which may not coincide with entry and exit of a scope.
+Other names for RAII include Constructor Acquires, Destructor Releases (CADRe) and one particular style of use is called Scope-based Resource Management (SBRM). This latter term is for the special case of automatic variables. RAII ties resources to object lifetime, which may not coincide with entry and exit of a scope.
+
+Coming from C++ I think I feel the need to encapsulate everything. I probably just simplify it to this so the usage is just creating the struct and leave any allocations to the caller.
+https://ziggit.dev/t/optionally-reducing-memory-allocations/1948/2
 
 The Go toolchain does not use the assembly language everyone else knows about. It does not use the linkers everyone else knows about. It does not let you use the debuggers everyone knows about, the memory checkers everyone knows about, or the calling conventions everyone else has agreed to suffer, in the interest of interoperability.
 -->

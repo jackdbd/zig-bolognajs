@@ -6,15 +6,14 @@ layout: cover
 
 - <Anchor href="https://zig-bolognajs.vercel.app/" text="zig-bolognajs.vercel.app" />
 - <Anchor href="https://github.com/jackdbd/zig-bolognajs" text="jackdbd/zig-bolognajs" />
-- <Anchor href="https://www.meetup.com/it-IT/bologna-js-meetup/events/296655951/" text="www.meetup.com/it-IT/bologna-js-meetup/events/296655951" />
 
 <!--
 In this presentation we will talk about:
-1. Features that Zig has.
-2. Features that Zig decides to leave out of the language, and why.
-3. How to do memory management in Zig.
-4. How to do error handling in Zig.
-5. How to integrate Zig in existing JS projects (browser and other JS runtimes like Node.js).
 
-Finally, we will show  few snippets of Zig code and discuss how to learn/practice this language.
+1. Why Zig might be interesting for a JS developer.
+2. Features that Zig decides to leave out of the language, and why.
+3. Most important features in Zig.
+4. How to do memory management in Zig.
+5. How to do error handling in Zig.
+6. How to develop hybrid JS/Zig projects.
 -->
