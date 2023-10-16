@@ -10,10 +10,10 @@ layout: cover
 <!--
 In this presentation we will talk about:
 
-1. Why Zig might be interesting for a JS developer.
+1. Why Zig might be interesting for a JS developer. And why I think it's better than native languages in the same "league": C, C++, Rust.
 2. Features that Zig decides to leave out of the language, and why.
-3. Most important features in Zig.
-4. How to do memory management in Zig.
-5. How to do error handling in Zig.
-6. How to develop hybrid JS/Zig projects.
+3. Error handling: JS vs Zig.
+4. How to develop hybrid JS/Zig projects (in browser, Node.js and other runtimes).
+5. How to use Zig libraries, and the Zig package manager.
+6. If there is enough time, we will see a bit of Zig syntax.
 -->

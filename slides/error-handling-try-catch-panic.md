@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1><code class="inline-code">try</code> / <code class="inline-code">catch</code> / <code class="inline-code">@panic</code></h1>
+<h1><code class="inline-code">try</code> / <code class="inline-code">catch</code> / <code class="inline-code">@panic</code> / <code class="inline-code">@compileError</code></h1>
 
 <Transform scale="0.85">
 
@@ -18,11 +18,12 @@ You can <Anchor href="https://github.com/ziglang/zig/issues/578#issuecomment-349
 
 If you know already at <span class="color:accent">compile time</span> that something is wrong, use <code class="inline-code">@compileError</code>.
 
-See also <Anchor 
+- <Anchor 
   href="https://youtu.be/TOIYyTacInM" 
-  text="Error, panic or unreachable? - Loris Cro" /> and <Anchor 
+  text="Error, panic or unreachable? - Loris Cro" />
+- <Anchor 
   href="https://www.huy.rocks/everyday/01-10-2022-zig-handling-errors" 
-  text="Zig / Handling errors" />.
+  text="Zig / Handling errors" />
 
 ## error return trace $\neq$ stack trace
 

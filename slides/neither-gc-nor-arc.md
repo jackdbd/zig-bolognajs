@@ -54,6 +54,14 @@ GObject's use of GLib's <code class="inline-code">g_malloc()</code> memory alloc
 </Transform>
 
 <!--
+Zig aims to be:
+
+- **Robust**: Behavior is correct even for edge cases such as out of memory.
+- **Optimal**: Write programs the best way they can behave and perform.
+- **Reusable**: The same code works in many environments which have different constraints.
+
+Using a garbage collector would imply some undeterministic behavior => not robust software
+
 ARC: Automatic Reference Counting
 
 Allocation might fail, so you have to handle failure.

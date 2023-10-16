@@ -53,6 +53,8 @@ layout: two-cols
 </Transform>
 
 <!--
+Why would a JS developer learn a native language? Performance, to know how computer works, interoperability.
+
 In C, preprocessor macros transform your program **before** actual compilation.
 
 I can't say much about Go. I wrote only a few hundred lines of Go.

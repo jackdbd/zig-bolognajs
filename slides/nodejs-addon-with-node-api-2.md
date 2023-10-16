@@ -41,3 +41,12 @@ export fn napi_register_module_v1(env: c.napi_env, exports: c.napi_value) c.napi
 ```
 
 </Transform>
+
+<!--
+Then in JS import the addon:
+
+```js
+const addon = require("./zig-out/lib/addon.node")
+console.log(addon.foo())
+```
+-->

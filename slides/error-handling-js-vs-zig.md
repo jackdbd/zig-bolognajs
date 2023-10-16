@@ -71,11 +71,13 @@ pub fn main() void {
 </Transform>
 
 <!--
-If we throw undefined, then in the catch ex.message throws a TypeError. So it's the worst.
+In the `throw undefined` scenario, in the `catch` block `ex.message` throws a `TypeError`. So it's the worst.
 
 We don't know what we caught. That's why in TypeScript we have:
 - `catch(e: any)` and not
 - `catch(e: Error | SomeOtherError)`
+
+[Robust Error Handling in Node.js Applications](https://youtu.be/7G3C8Y5tzw4?si=dC9JKGHaul8VdUKh)
 
 - `isNumInRange(5)` prints true
 - `isNumInRange(9)` prints false
