@@ -198,6 +198,10 @@ src: ./slides/how-to-setup-vscode.md
 ---
 
 ---
+src: ./slides/how-to-use-libraries.md
+---
+
+---
 src: ./slides/how-to-learn-zig.md
 ---
 
