@@ -4,7 +4,7 @@ layout: two-cols
 ---
 # Explicit allocations
 
-<Transform scale="0.85">
+<Transform scale="0.95">
 
 Explicit memory management is hard, right? Not necessarily.
 
@@ -29,7 +29,7 @@ Understanding a generational garbage collector like Orinoco is much harder.
 
 # Allocator interface
 
-<Transform scale="0.85">
+<Transform scale="0.95">
 
 In Zig, functions which need to allocate accept an <code class="inline-code">Allocator</code> parameter.
 

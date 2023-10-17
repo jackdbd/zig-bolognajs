@@ -5,7 +5,7 @@ layout: two-cols
 
 <Transform scale="0.85">
 
-```text {all|11|all}
+```zig {all|11|all}
 const std = @import("std");
 
 pub fn main() void {
@@ -38,7 +38,7 @@ debug: i (usize): 7
 
 <Transform scale="0.85">
 
-```text {all|6|all}
+```zig {all|6|all}
 const std = @import("std");
 
 pub fn main() void {

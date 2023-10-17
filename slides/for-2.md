@@ -5,7 +5,7 @@ layout: two-cols
 
 <Transform scale="0.85">
 
-```text
+```zig
 const std = @import("std");
 const log = std.log;
 

@@ -3,7 +3,7 @@ layout: two-cols
 ---
 # No garbage collection
 
-<Transform scale="0.85">
+<Transform scale="0.95">
 
 Modern garbage collectors (G1, Orinoco, etc) are really complex and they are basically a black box.
 
@@ -35,7 +35,9 @@ Modern garbage collectors (G1, Orinoco, etc) are really complex and they are bas
 
 # No reference counting
 
-<Transform scale="0.85">
+<Transform scale="0.95">
+
+In C++, [shared_ptr](https://en.cppreference.com/w/cpp/memory/shared_ptr) uses automatic reference counting.
 
 Several C libraries (GTK, Cairo) use <code class="inline-code">GObject</code> (GLib Object System). GObjects are reference counted. As long as their reference count is nonzero, they are "alive", and when their reference count drops to zero, they are deleted from memory.
 

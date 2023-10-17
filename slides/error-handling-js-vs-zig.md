@@ -45,7 +45,7 @@ main()
 <span>Zig functions can <code class="inline-code">return</code> possible error values → An error type is a set of all possible error values.</span><br>
 <span>We <span class="color:accent">know</span> what we caught.</span>
 
-```text
+```zig
 fn isNumInRange(n: u8) NumberNotInRangeError!bool {
     if (n <= 3) {
         return NumberNotInRangeError.TooSmall;

@@ -3,9 +3,9 @@ layout: default
 ---
 # Compile-time type reflection
 
-<Transform scale="0.80">
+<Transform scale="0.8">
 
-```text
+```zig
 // demo-reflection.zig
 const std = @import("std");
 
@@ -40,4 +40,5 @@ Read about <code class="inline-code">@typeInfo</code> <Anchor
   href="https://ziglang.org/documentation/master/#typeInfo" 
   text="in the documentation" 
   alt="@typeInfo in the Zig documentation" />.
+
 </Transform>

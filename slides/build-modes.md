@@ -15,7 +15,7 @@ layout: default
 
 You can also use <code class="inline-code">@setRuntimeSafety(false)</code> to <Anchor href="https://ziglang.org/documentation/master/#setRuntimeSafety" text="disable runtime safety checks" /> for individual scopes.
 
-```text
+```zig
 fn foo() void {
     var x: u8 = 255;
     x += 1; // undefined behavior

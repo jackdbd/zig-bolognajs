@@ -7,15 +7,15 @@ layout: two-cols
 
 ✅ **Do** omit the error set of a function.
 
-```text
+```zig
 pub fn foo() !u32 {
-  ...
+  // ...
 }
 ```
 
 Even in recursive functions.
 
-```text
+```zig
 const MyError = error{
     FourIsBadLuck,
 };
@@ -37,9 +37,9 @@ fn factorial(n: usize) !usize {
 
 ❌ **Do not** use <code class="inline-code">anyerror</code> as the error set.
 
-```text
+```zig
 pub fn foo() anyerror!u32 {
-  ...
+  // ...
 }
 ```
 

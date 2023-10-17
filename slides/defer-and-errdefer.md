@@ -6,9 +6,9 @@ layout: default
 
 <Transform scale="0.85">
 
-The deallocation code is always directly following the allocation code.
+Allocate, then <code class="inline-code">defer</code> a deallocation immediately afterwards.
 
-Resource cleanup is done using <code class="inline-code">errdefer</code>.
+Cleanup resources using <code class="inline-code">errdefer</code>.
 
 ```zig {all|2,8,13,17|11|all|2,8|6|all|2,8,13|6,11|all}
 fn createFoo(param: i32) !Foo {

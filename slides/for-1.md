@@ -36,7 +36,7 @@ debug: colors[1] is green
 
 <Transform scale="0.85">
 
-```text {all|12|all}
+```zig {all|12|all}
 const std = @import("std");
 const log = std.log;
 

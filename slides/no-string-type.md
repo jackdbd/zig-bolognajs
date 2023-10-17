@@ -3,7 +3,7 @@ layout: two-cols
 ---
 # No string type 1/2
 
-<Transform scale="0.85">
+<Transform scale="0.95">
 
 <p>How long is the string <span class="color:accent">北斗の拳</span> ?</p>
 
@@ -28,7 +28,7 @@ layout: two-cols
 
 # No string type 2/2
 
-<Transform scale="0.85">
+<Transform scale="0.95">
 
 <v-click>
 
@@ -43,10 +43,6 @@ layout: two-cols
 - <span class="color:accent">の</span> is a Japanese Hiragana character and takes 3 bytes in UTF-8.
 
 <p>So <span class="color:accent">北斗の拳</span> 12 <code class="inline-code">u8</code> long in UTF-8.</p>
-
-</v-click>
-
-<v-click>
 
 **Trivia**: there are [many Japanese encoding standards](https://en.wikipedia.org/wiki/JIS_encoding)
 

@@ -44,7 +44,7 @@ function createError (
 
 <p>Define an <Anchor href="https://ziglang.org/documentation/0.10.1/#Error-Set-Type" text="error set type"/></p>
 
-```text
+```zig
 const NumberNotInRangeError = error{
     TooSmall,
     TooBig,

@@ -55,7 +55,9 @@ fn doAThing(str: []u8) void {
 }
 ```
 
-We can do the same in JS. For example, in [Joi](https://joi.dev/api/?v=17.9.1#anyvalidatevalue-options):
+We can use the same approach in our JS code by never throwing an <code class="inline-code">Error</code>, but always returning it.
+
+For example, in [Joi](https://joi.dev/api/?v=17.9.1#anyvalidatevalue-options):
 
 ```js
 const result = joi.validate(value, options)

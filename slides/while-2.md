@@ -5,7 +5,7 @@ layout: two-cols
 
 <Transform scale="0.85">
 
-```text {all|14|all}
+```zig {all|14|all}
 const std = @import("std");
 
 var numbers_left: u32 = undefined;
@@ -44,7 +44,7 @@ debug: total: 3
 
 <Transform scale="0.85">
 
-```text {all|9|all}
+```zig {all|9|all}
 const std = @import("std");
 
 fn inRange(i0: usize, i1: usize, n: usize) bool {
