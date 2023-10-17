@@ -5,10 +5,10 @@ layout: intro
 <h1 class="color:accent">Giacomo Debidda</h1>
 
 <div class="leading-8 opacity-80">
-Freelance full stack developer<br>
-I like TypeScript / Clojure / Zig<br>
+Freelance full stack developer / performance consultant<br>
+I write TypeScript / Clojure / Zig<br>
 I tried (almost) all JavaScript frameworks<br>
-I care about Web Performance<br>
+I like 🛹 and 🛼 (<Anchor href="https://www.reddit.com/r/rollerblading/comments/hmwr47/its_time_for_a_rollerblading_emoji/" text="it's time for a rollerblading emoji" />)<br>
 </div>
 
 <div class="my-10 grid grid-cols-[40px_1fr] w-min gap-y-4">

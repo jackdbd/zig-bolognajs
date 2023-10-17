@@ -38,6 +38,10 @@ src: ./slides/speaker.md
 ---
 
 ---
+src: ./slides/why-should-a-js-developer-care-about-a-compiled-language.md
+---
+
+---
 src: ./slides/why-zig-and-not-x.md
 ---
 

@@ -16,6 +16,7 @@ layout: two-cols
 - <code class="inline-code">std.heap.LoggingAllocator</code>
 - <code class="inline-code">std.heap.LogToWriterAllocator</code>
 - <code class="inline-code">std.heap.PageAllocator</code>
+- <code class="inline-code">std.heap.SbrkAllocator</code>
 - <code class="inline-code">std.heap.ScopedLoggingAllocator</code>
 - <code class="inline-code">std.heap.ThreadSafeAllocator</code>
 - <code class="inline-code">std.heap.WasmAllocator</code>

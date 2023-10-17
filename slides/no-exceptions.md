@@ -3,7 +3,7 @@ layout: two-cols
 ---
 # No exceptions
 
-<Transform scale="0.85">
+<Transform scale="0.9">
 
 Exceptions make cleaning up resources problematic.
 
@@ -16,8 +16,6 @@ Exceptions make cleaning up resources problematic.
     </p>
   </template>
 </Citation>
-
-<br>
 
 Exceptions hide control flow.
 
@@ -34,13 +32,13 @@ Exceptions hide control flow.
 
 ::right::
 
-# What about Zig?
+# Errors as values
 
-<Transform scale="0.85">
+<Transform scale="0.9">
 
-Errors can be handled like any other value.
+Zig errors are <span class="color:accent">values</span>. Handle them like any other value.
 
-```text
+```zig
 fn doAThing(str: []u8) void {
     if (parseU64(str, 10)) |number| {
         doSomethingWithNumber(number);
@@ -55,6 +53,13 @@ fn doAThing(str: []u8) void {
         // handle all possible errors.
     }
 }
+```
+
+We can do the same in JS. For example, in [Joi](https://joi.dev/api/?v=17.9.1#anyvalidatevalue-options):
+
+```js
+const result = joi.validate(value, options)
+const { error, value, warning, artifacts } = result
 ```
 
 </Transform>
