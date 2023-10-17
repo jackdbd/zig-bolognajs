@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "npm run build:zig && npm run build:slides",
+    "build:pdf": "slidev export --with-toc --output assets/zig-bolognajs && slidev export-notes --output assets/zig-bolognajs-notes",
     "build:slides": "slidev build",
     "build:zig": "zig build -Doptimize=ReleaseSmall && zig build --build-file build-canvas.zig -Doptimize=ReleaseSmall && mv zig-out/lib/main.wasm zig-out/lib/canvas.wasm && mv zig-out/lib/* public/",
     "clean": "rimraf public/*.wasm dist/ zig-cache/ zig-out/",

@@ -44,14 +44,8 @@ Slidev allows [exporting the slides to a PDF](https://sli.dev/guide/exporting.ht
 
 > :information_source: Since I don't want to install Playwright when building on Vercel (so deployments are faster), I declare `playwright-chromium` as a dev dependency and set `npm install --omit=dev` as the Vercel `installCommand` in `vercel.json`.
 
-Run this command to export the presentation to `assets/zig-bolognajs.pdf`.
+Run this command to export the presentation to `assets/zig-bolognajs.pdf` and the notes to `assets/zig-bolognajs-notes.pdf`.
 
 ```sh
-npx slidev export --with-toc --output assets/zig-bolognajs
-```
-
-Run this command to export the presentation notes.
-
-```sh
-npx slidev export-notes --output assets/zig-bolognajs-notes
+npm run build:pdf
 ```
