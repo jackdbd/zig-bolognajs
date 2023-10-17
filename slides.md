@@ -106,6 +106,10 @@ src: ./slides/error-handling-tips.md
 ---
 
 ---
+src: ./slides/build-projects-js-vs-zig.md
+---
+
+---
 src: ./slides/lets-use-zig-in-frontend-js.md
 ---
 
