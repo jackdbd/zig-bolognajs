@@ -67,7 +67,8 @@ ARC: Automatic Reference Counting
 Allocation might fail, so you have to handle failure.
 Deallocation must always succeed.
 
-C has manual memory management, right? Sure, but many libraries do reference counting, so you don't really have to manage memory.
+C has manual memory management, but many libraries do reference counting, so you don't really have to manage memory.
+C++ has shared pointers that use automatic reference counting.
 
 C has a default allocator - malloc, realloc, and free.
 -->
