@@ -1,13 +1,21 @@
-# Zig Bologna JS
+# Zig talk @ Bologna JS
 
-An introduction to the Zig programming language and toolchain.
+Slides and code for [my talk on Zig at Bologna JS](https://www.meetup.com/it-IT/bologna-js-meetup/events/296655951/).
 
-I gave this talk at [Bologna JS](https://www.bolognajs.com/).
+I gave a [similar presentation at pisa.dev](https://github.com/jackdbd/zig-tour). That presentation was more focused on the Zig C-interop, this presentation focuses on how to use Zig in a JS project. Moe precisely, in this presentation I talked about:
 
-- 🌐 https://zig-bolognajs.vercel.app/
-- Meetup event: https://www.meetup.com/it-IT/bologna-js-meetup/events/296655951/
-- 📺 TODO: YouTube link?
-- 🗎 https://raw.githubusercontent.com/jackdbd/zig-bolognajs/main/assets/zig-bolognajs.pdf
+1. Why Zig might be interesting for a JS developer. And why it could more interesting than other compiled languages (e.g. C, C++, Rust).
+2. Features that Zig decides to leave out of the language, and why.
+3. Building a project: JS vs Zig.
+4. Error handling: JS vs Zig.
+5. How to develop hybrid JS/Zig projects (for the browser, Node.js, and for other runtimes).
+6. How to use Zig libraries, and the Zig package manager.
+
+The presentation is available online: https://zig-bolognajs.vercel.app/
+
+In alternative, you can download the slides as a PDF: https://raw.githubusercontent.com/jackdbd/zig-bolognajs/main/assets/zig-bolognajs.pdf
+
+If you want to run the presentation locally or modify it, follow the instructions below.
 
 ## Installation
 
@@ -27,7 +35,7 @@ Launch the Vite dev server and re-compile all WebAssembly modules with this comm
 npm run dev
 ```
 
-You can view the presentation either in:
+You can now view the presentation on localhost:
 
 - Play mode: http://localhost:3030/1
 - [Presenter](https://sli.dev/guide/presenter-mode.html) mode: http://localhost:3030/presenter/1
